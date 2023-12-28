@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Home Dashboard Prototype</title>
     <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -14,61 +15,96 @@
             <h1>Dashboard</h1>
             <h2>Welcome, user</h2>
         </hgroup>
-        <article>
-            <header>
-                <hgroup>
-                    <h2>Living Room</h2>
-                    <h3>Temperature: <span id="temp">10</span><sup>0</sup>C and Humidity: <span id="hum">20</span></h3>
-                </hgroup>
-            </header>
-            <div class="grid">
-                <div>
-                    <h4>Fan</h4>
-                    <label for="range">
-                        <input type="range" min="0" max="3" value="0" id="fan" name="range" />0
-                    </label>
-                </div>
-                <div>
-                    <h4>Light</h4>
-                    <label id="living-room-light">
-                        <input type="checkbox" id="lrl-switch" name="lrl-swich" role="switch" />
-                        ON
-                    </label>
-                </div>
+        <div class="tabs">
+            <input type="radio" class="tabs-radio" name="tabs-rooms" id="tab1" checked>
+            <label for="tab1" class="tabs-label">Living Room</label>
+            <div class="tabs-content">
+                <article>
+                    <header>
+                        <hgroup>
+                            <h2>Living Room</h2>
+                            <h3>Temperature: <span id="temp">10</span><sup>0</sup>C and Humidity: <span
+                                    id="hum">20</span></h3>
+                        </hgroup>
+                    </header>
+                    <div class="grid">
+                        <div>
+                            <h4>Fan</h4>
+                            <label for="fan">
+                                <input type="range" min="0" max="3" value="0" id="fan" name="range" />0
+                            </label>
+                        </div>
+                        <div>
+                            <h4>Light</h4>
+                            <label for="lrl-swich">
+                                <input type="checkbox" id="lrl-switch" name="lrl-swich" role="switch" />
+                                ON
+                            </label>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </article>
-        <article>
-            <header>
-            <h2>Bedroom</h2>
-            </header>
-            <div class="grid">
-                <div><h4>Light</h4><label id="bd-light"><input type="checkbox" id="bdl-switch" role="switch">ON</label></div>
+            <input type="radio" class="tabs-radio" name="tabs-rooms" id="tab2">
+            <label for="tab2" class="tabs-label">Bedroom</label>
+            <div class="tabs-content">
+                <article>
+                    <header>
+                        <h2>Bedroom</h2>
+                    </header>
+                    <div class="grid">
+                        <div>
+                            <h4>Light</h4><label for="bdl-switch"><input type="checkbox" id="bdl-switch"
+                                    role="switch">ON</label>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </article>
-        <article>
-            <header>
-            <h2>Bathroom</h2>
-            </header>
-            <div class="grid">
-                <div><h4>Light</h4><label id="bt-light"><input type="checkbox" id="btl-switch" role="switch">ON</label></div>
+            <input type="radio" class="tabs-radio" name="tabs-rooms" id="tab3">
+            <label for="tab3" class="tabs-label">Bathroom</label>
+            <div class="tabs-content">
+                <article>
+                    <header>
+                        <h2>Bathroom</h2>
+                    </header>
+                    <div class="grid">
+                        <div>
+                            <h4>Light</h4><label for="btl-switch"><input type="checkbox" id="btl-switch"
+                                    role="switch">ON</label>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </article>
-        <article>
-            <header>
-            <h2>Kitchen</h2>
-            </header>
-            <div class="grid">
-                <div><h4>Light</h4><label id="k-light"><input type="checkbox" id="kl-switch" role="switch">ON</label></div>
+            <input type="radio" class="tabs-radio" name="tabs-rooms" id="tab4">
+            <label for="tab4" class="tabs-label">Kitchen</label>
+            <div class="tabs-content">
+                <article>
+                    <header>
+                        <h2>Kitchen</h2>
+                    </header>
+                    <div class="grid">
+                        <div>
+                            <h4>Light</h4><label for="kl-switch"><input type="checkbox" id="kl-switch"
+                                    role="switch">ON</label>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </article>
-        <article>
-            <header>
-            <h2>Main Door</h2>
-            </header>
-            <div class="grid">
-                <div><h4>Door Lock</h4><label id="lock"><input type="checkbox" id="d-lock" role="switch">ON</label></div>
+            <input type="radio" class="tabs-radio" name="tabs-rooms" id="tab5">
+            <label for="tab5" class="tabs-label">Main Door</label>
+            <div class="tabs-content">
+                <article>
+                    <header>
+                        <h2>Main Door</h2>
+                    </header>
+                    <div class="grid">
+                        <div>
+                            <h4>Door Lock</h4><label for="d-lock"><input type="checkbox" id="d-lock"
+                                    role="switch">ON</label>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </article>
+        </div>
     </main>
 </body>
 
