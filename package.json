@@ -1,0 +1,21 @@
+{
+  "name": "smart-home-dashboard",
+  "version": "0.0.1",
+  "description": "Smart home dashboard",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electron.js",
+    "smart",
+    "home",
+    "iot"
+  ],
+  "author": "Damindu Sandeepa <damindusandeepa2002@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.1.0"
+  }
+}

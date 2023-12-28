@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Dashboard Prototype</title>
+    <link rel="stylesheet" href="css/pico.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <hgroup class="container">
+            <h1>Dashboard</h1>
+            <h2>Welcome, user</h2>
+        </hgroup>
+        <article>
+            <header>
+                <hgroup>
+                    <h2>Living Room</h2>
+                    <h3>Temperature: <span id="temp">10</span><sup>0</sup>C and Humidity: <span id="hum">20</span></h3>
+                </hgroup>
+            </header>
+            <div class="grid">
+                <div>
+                    <h4>Fan</h4>
+                    <label for="range">
+                        <input type="range" min="0" max="3" value="0" id="fan" name="range" />0
+                    </label>
+                </div>
+                <div>
+                    <h4>Light</h4>
+                    <label id="living-room-light">
+                        <input type="checkbox" id="lrl-switch" name="lrl-swich" role="switch" />
+                        ON
+                    </label>
+                </div>
+            </div>
+        </article>
+        <article>
+            <header>
+            <h2>Bedroom</h2>
+            </header>
+            <div class="grid">
+                <div><h4>Light</h4><label id="bd-light"><input type="checkbox" id="bdl-switch" role="switch">ON</label></div>
+            </div>
+        </article>
+        <article>
+            <header>
+            <h2>Bathroom</h2>
+            </header>
+            <div class="grid">
+                <div><h4>Light</h4><label id="bt-light"><input type="checkbox" id="btl-switch" role="switch">ON</label></div>
+            </div>
+        </article>
+        <article>
+            <header>
+            <h2>Kitchen</h2>
+            </header>
+            <div class="grid">
+                <div><h4>Light</h4><label id="k-light"><input type="checkbox" id="kl-switch" role="switch">ON</label></div>
+            </div>
+        </article>
+        <article>
+            <header>
+            <h2>Main Door</h2>
+            </header>
+            <div class="grid">
+                <div><h4>Door Lock</h4><label id="lock"><input type="checkbox" id="d-lock" role="switch">ON</label></div>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
