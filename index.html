@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>Smart Home Dashboard Prototype</title>
     <link rel="stylesheet" href="css/pico.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/ui.js"></script>
 </head>
 
 <body>
@@ -30,15 +31,12 @@
                     <div class="grid">
                         <div>
                             <h4>Fan</h4>
-                            <label for="fan">
-                                <input type="range" min="0" max="3" value="0" id="fan" name="range" />0
-                            </label>
+                            <input type="range" min="0" max="3" value="0" id="fan" name="range" />
                         </div>
                         <div>
                             <h4>Light</h4>
-                            <label for="lrl-swich">
-                                <input type="checkbox" id="lrl-switch" name="lrl-swich" role="switch" />
-                                ON
+                            <input type="checkbox" id="lrl-switch" name="lrl-swich" role="switch" />
+                            <label for="lrl-swich" id="lrl-label">OFF
                             </label>
                         </div>
                     </div>
@@ -53,8 +51,9 @@
                     </header>
                     <div class="grid">
                         <div>
-                            <h4>Light</h4><label for="bdl-switch"><input type="checkbox" id="bdl-switch"
-                                    role="switch">ON</label>
+                            <h4>Light</h4>
+                            <input type="checkbox" id="bdl-switch" role="switch">
+                            <label for="bdl-switch" id="bdl-label">OFF</label>
                         </div>
                     </div>
                 </article>
@@ -68,8 +67,9 @@
                     </header>
                     <div class="grid">
                         <div>
-                            <h4>Light</h4><label for="btl-switch"><input type="checkbox" id="btl-switch"
-                                    role="switch">ON</label>
+                            <h4>Light</h4>
+                            <input type="checkbox" id="btl-switch" role="switch">
+                            <label for="btl-switch" id="btl-label">OFF</label>
                         </div>
                     </div>
                 </article>
@@ -83,8 +83,9 @@
                     </header>
                     <div class="grid">
                         <div>
-                            <h4>Light</h4><label for="kl-switch"><input type="checkbox" id="kl-switch"
-                                    role="switch">ON</label>
+                            <h4>Light</h4>
+                            <input type="checkbox" id="kl-switch" class="switch" role="switch">
+                            <label for="kl-switch" id="kl-label">OFF</label>
                         </div>
                     </div>
                 </article>
@@ -98,8 +99,9 @@
                     </header>
                     <div class="grid">
                         <div>
-                            <h4>Door Lock</h4><label for="d-lock"><input type="checkbox" id="d-lock"
-                                    role="switch">ON</label>
+                            <h4>Door Lock</h4>
+                            <input type="checkbox" id="d-lock" role="switch">
+                            <label for="d-lock" id="door-label">LOCK</label>
                         </div>
                     </div>
                 </article>
