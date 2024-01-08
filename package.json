@@ -17,5 +17,8 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^28.1.0"
+  },
+  "dependencies": {
+    "firebase": "^10.7.1"
   }
 }
