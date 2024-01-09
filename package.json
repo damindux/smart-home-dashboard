@@ -16,9 +16,6 @@
   "author": "Damindu Sandeepa <damindusandeepa2002@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^28.1.0"
-  },
-  "dependencies": {
-    "firebase": "^10.7.1"
+    "electron": "^28.1.2"
   }
 }
